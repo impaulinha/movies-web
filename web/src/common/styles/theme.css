@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+
+  --font-weight-title: 700;
+  --font-weight-subtitle: 600;
+  --font-weight-body: 400;
+  --font-weight-light: 300;
+  --font-weight-extraLight: 200;
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--textPrimary);
+  --color-text-secondary: var(--textSecondary);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-success: var(--success);
+  --color-info: var(--info);
+}
