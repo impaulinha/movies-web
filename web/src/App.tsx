@@ -1,9 +1,7 @@
 import './common/styles/theme.css'
+import { RouterProvider } from 'react-router-dom'
+import { Routes } from './routes/index.routes'
 
 export default function App() {
-  return (
-    <div className="bg-background">
-      <h1 className="text-info">Hello Word</h1>
-    </div>
-  )
+  return <RouterProvider router={Routes} />
 }
