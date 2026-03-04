@@ -13,8 +13,8 @@
 
   --color-background: var(--background);
   --color-surface: var(--surface);
-  --color-text-primary: var(--textPrimary);
-  --color-text-secondary: var(--textSecondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
   --color-border: var(--border);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
