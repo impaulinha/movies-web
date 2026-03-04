@@ -1,4 +1,5 @@
 import { House, Heart, Search, TextAlignJustify, Film } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export function Navbar() {
   return (
@@ -7,30 +8,32 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-2 text-secondary">
           <Film size={32} />
           <span className="text-lg font-subtitle">MoviesDB</span>
+          <Link to="/" />
         </div>
 
         <ul className="flex items-center justify-around w-full md:w-auto md:gap-6">
           <li className="flex flex-col items-center text-text-primary justify-center gap-1 transition-colors md:flex-row md:gap-2">
             <House size={24} />
             <span className="text-sm md:text-base">Home</span>
+            <Link to="/" />
           </li>
 
           <li className="flex flex-col items-center justify-center text-text-primary gap-1 transition-colors md:flex-row md:gap-2">
             <TextAlignJustify size={24} />
             <span className="text-sm md:text-base">Categorias</span>
-            {/* <Link to="/categories">Categorias</Link> */}
+            <Link to="/categorias" />
           </li>
 
           <li className="flex flex-col items-center justify-center text-text-primary gap-1 transition-colors md:flex-row md:gap-2">
             <Heart size={24} />
             <span className="text-sm md:text-base">Favoritos</span>
-            {/* <Link to="/saved">Salvos</Link> */}
+            <Link to="/favoritos" />
           </li>
 
           <li className="flex flex-col items-center justify-center text-text-primary gap-1 transition-colors md:flex-row md:gap-2">
             <Search size={24} />
             <span className="text-sm md:text-base">Pesquisar</span>
-            {/* <Link to="/search">Pesquisa</Link> */}
+            <Link to="/pesquisar" />
           </li>
         </ul>
       </div>
